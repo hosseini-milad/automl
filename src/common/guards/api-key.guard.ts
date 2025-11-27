@@ -14,7 +14,7 @@ export class ApiKeyGuard implements CanActivate {
     if (!client) return false;
 
     req.client = client;
-    await this.clientsService.incrementRequest(client._id);
+    await this.clientsService.incrementRequest(client._id.toString());
 
     return true;
   }
