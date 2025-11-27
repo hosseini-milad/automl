@@ -1,0 +1,21 @@
+**/node_modules
+**/uploads
+**/upload
+**/logs
+# **.env
+**/env
+**.envO
+
+
+# Ignore environment files
+.env
+.env.*
+!.env.example
+
+# Test coverage
+coverage/
+*.lcov
+.nyc_output/
+
+# Jest
+jest-results.json
